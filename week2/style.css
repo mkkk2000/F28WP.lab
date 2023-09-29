@@ -5,12 +5,12 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     color: #505050;
-   background: linear-gradient(#3f87a6, #ebf8e1);
+   background: linear-gradient(#3f87a6, #ebf8e1, #f69d3c);
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(#e66465, #9198e5);
+    background: linear-gradient(30deg, #3f87a6, #ebf8e1, #f69d3c, #561423);
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -85,7 +85,7 @@ main {
 .services {
     margin: 2rem auto;
     padding: 2rem;
-    background-color: #5368a6;
+    background-color: #b4bfe0;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
