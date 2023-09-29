@@ -4,13 +4,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: #505050;
+    color: #000000;
+    background: linear-gradient(to right, #bcdce8, #d1edda);
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(#3f87a6, #ebf8e1);
-    color: #fff;
+    background: linear-gradient(#63afd0, #ebf8e1);
+    color: #310202;
     text-align: center;
     padding: 20px;
     position: sticky;
@@ -139,7 +140,7 @@ main h3 {
 .cta-container {
     text-align: center;
     padding: 20px;
-    background-color: #d0dbe7;
+    background-color: #fbfcfd;
     margin-top: 30px;
 }
 
