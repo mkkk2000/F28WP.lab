@@ -5,7 +5,39 @@
   <title>Gallery - Wanderlust Voyages</title>
   <link rel="stylesheet" href="style.css">
   <style>
-   /* Your CSS styles here */
+    .gallery-container {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 40px;
+  }
+
+   .gallery-container img {
+	width: 24%;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ <div>
+  <header>
+    <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
+	</header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+    </ul>
+    </nav>
+  
+   
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -15,14 +47,14 @@
     <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
   </header>
   <nav>
-    <!-- Your navigation links here -->
+    
   </nav>
   
   <main class="services">
     <h1>Gallery</h1>
 
     <div class="container">
-      <!-- Slideshow Images -->
+      
       <div class="mySlides">
         <div class="numbertext">1 / 8</div>
         <img src="images/1.jpg" alt="Spa Image 1" class="slideshow-img">
@@ -57,13 +89,13 @@
         <img src="images/8.jpg" alt="Spa Image 8" class="slideshow-img">
       </div>
 
-      <!-- Repeat this pattern for all 8 images -->
+      
 
       <a class="prev" onclick="plusSlides(-1)">prev</a> 
       <a class="next" onclick="plusSlides(1)">next</a> 
     </div>
 
-    <!-- Call to Action -->
+    
     <section class="cta-container">
       <h2>Ready to Experience Our Services?</h2>
       <p>Join us today and discover the difference we can make for you!</p>
@@ -72,7 +104,7 @@
   </main> 
 
   <footer>
-    <!-- Your footer content here -->
+    
   </footer>
  </div>
 
