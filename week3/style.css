@@ -1,0 +1,248 @@
+/* Reset Styles */
+body {
+    background: scroll;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background: linear-gradient(to right, #bcdce8, #d1edda);
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(#63afd0, #ebf8e1);
+    color: #310202;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0; 
+}
+
+.headeraH1 {
+    margin: 0;
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Navigation Styles */
+nav ul {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: #fffcfc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #9d9d9d;  /* Darker shade for hover */
+}
+
+/* Banner Styles */
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.centered-banner {
+    padding: 30px;
+    max-width: 80%;
+    height: auto;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.services {
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main h3 {
+    margin-top: 20px;
+}
+
+/* Service Columns */
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-column {
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-column img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.service-column h3 {
+    margin-bottom: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 800px) {
+    .service-column {
+        flex-basis: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 700px) {
+    .service-column {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Call to Action Styles */
+.cta-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fbfcfd;
+    margin-top: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #647682;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #e3e3e3;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    margin: 0;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;  /* Smooth transition for hover effect */
+}
+
+footer a:hover {
+    color: #ffffff;  /* Lighter color on hover */
+}
+
+footer p {
+    margin: 10px 0 0;
+
+}
+
+.mySlides{
+    display : none;
+}
+* {
+    box-sizing: border-box;
+    }
+    .slideshow-img {
+    vertical-align: middle;
+    width: 100%;
+    }
+    
+    .container{
+        position:relative;
+    }
+    .mySlides{
+        display: none;
+    }
+    .cursor{
+        cursor: pointer;
+    }
+    .prev,
+    .next{
+        cursor: pointer;
+        position:absolute;
+        top: 40%;
+        width:auto;
+        padding:16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select:none;
+        
+    }
+    .next{
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev:hover,
+    .next:hover{
+        background-color: rgba (0, 0, 0, 0.8);
+     *   {
+            box-sizing: border-box;
+        }
+    }
+    .numbertext{
+        color:#f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position:absolute;
+        top: 0;
+    }
