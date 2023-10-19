@@ -15,7 +15,7 @@ header {
     text-align: center;
     padding: 20px;
     position: sticky;
-    top: 0; 
+    top: 0;  
 }
 
 .headeraH1 {
@@ -216,7 +216,7 @@ footer p {
     .next{
         cursor: pointer;
         position:absolute;
-        top: 40%;
+        top: 20%;
         width:auto;
         padding:16px;
         margin-top: -50px;
@@ -225,7 +225,7 @@ footer p {
         font-size: 20px;
         border-radius: 0 3px 3px 0;
         user-select: none;
-        -webkit-user-select:none;
+        -webkit-user-select:none; 
         
     }
     .next{
