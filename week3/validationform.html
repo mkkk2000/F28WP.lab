@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .success {
+            color: green;
+        }
+
+        .btn {
+            background-color: #537ce7;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <div class="container">
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <div class="error" id="usernameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <div class="error" id="emailError"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <div class="error" id="passwordError"></div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+                <div class="error" id="confirmPasswordError"></div>
+            </div>
+            <button class="btn" type="submit">Register</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById("registrationForm");
+        const fields = ["username", "email", "password", "confirmPassword"];
+
+        fields.forEach((field) => {
+            const input = document.getElementById(field);
+            const error = document.getElementById(`${field}Error`);
+
+            input.addEventListener("blur", () => {
+                if (input.value.trim() === "") {
+                    error.textContent = `${field.charAt(0).toUpperCase() + field.slice(1)} is required`;
+                    input.classList.add("error");
+                } else {
+                    error.textContent = "";
+                    input.classList.remove("error");
+                    input.classList.add("success");
+                }
+            });
+        });
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            let isValid = true;
+
+            fields.forEach((field) => {
+                const input = document.getElementById(field);
+                const error = document.getElementById(`${field}Error`);
+
+                if (input.value.trim() === "") {
+                    error.textContent = `${field.charAt(0).toUpperCase() + field.slice(1)} is required`;
+                    input.classList.add("error");
+                    isValid = false;
+                }
+            });
+
+            if (isValid) {
+                // Form is valid, you can submit it or perform other actions here
+                alert("Form submitted successfully!");
+            }
+        });
+    </script>
+</body>
+</html>
