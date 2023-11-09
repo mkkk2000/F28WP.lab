@@ -1,0 +1,44 @@
+body {
+    font-family: Helvetica, sans-serif, sans-serif;
+    }
+    header {
+    text-align: center;
+    margin-top: 50px;
+    }
+    #cityInput {
+    padding: 10px;
+    font-size: 16px;
+    }
+    button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(15deg, #350158, #af23ae);
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    #weather-container {
+    margin-top: 30px;
+    text-align: center;
+    }
+    #weather-container h1 {
+    font-size: 3.2em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #1e90ff, #ff1493);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin: 20px 0;
+    }
+    #weather-container p {
+    font-size: 1.2em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #160817, #8b0285);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 20px 0; 
+    }
+    
